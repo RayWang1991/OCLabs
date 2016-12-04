@@ -10,9 +10,10 @@
  */
 
 #import <Foundation/Foundation.h>
-int main() {
+int main_String() {
   NSString *consStr1 = @"cons string";
-  NSString *consStr2 = @"cons1234 string";
+  NSString
+      *consStr2 = @"cons1234 string";
   NSString *consStr3 = @"cons string";
   NSMutableString *mutableString =
       [NSMutableString stringWithString:@"iadf"];
@@ -27,4 +28,6 @@ int main() {
         consStr3);
   NSLog(@"the retain count of mutstr is %lx",
         [mutableString retainCount]);
+
+  return 0;
 }

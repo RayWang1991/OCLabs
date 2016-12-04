@@ -16,7 +16,7 @@ NSAutoreleasePool *pool= [[NSAutoreleasePool alloc] init];
   id obj2 = obj1;
   NSLog(@"%p", obj1 );
  // [obj1 retain];
-  NSLog(@"%d", [obj1 retainCount] );
+  NSLog(@"%lu", [obj1 retainCount] );
   [obj1 release];
   [obj1 release];
  // NSLog(@"%p", obj1 );
